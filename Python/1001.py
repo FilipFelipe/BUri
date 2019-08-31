@@ -1,4 +1,4 @@
-A = int(input())
-B = int(input())
+A = int(input())#entrada 1
+B = int(input())#entrada 2
 X = A+B
 print("X =",X)
