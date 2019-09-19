@@ -1,9 +1,11 @@
 op = int(input())
+numero = []
 for i in range(op):
-    numero = input().split()
-    numero1 = numero[0]
+    numero.append(input())
+for nu in range(op):
     led = 0
-    for ut in range(len(numero1)):
+    numero1 = numero[nu]
+    for ut in range(len(numero[nu])):
         if numero1[ut] == "0":
             led += 6
         if numero1[ut] == "1":
@@ -24,5 +26,4 @@ for i in range(op):
             led += 7
         if numero1[ut] == "9":
             led += 6
-
-    print(led)
+    print("%d leds" % led)
