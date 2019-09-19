@@ -1,6 +1,20 @@
-a = input().split()
-resp = int(a[1]) % int(a[0])
-if resp == 0:
-    print("Sao Multiplos")
-else:
-    print("Nao sao Multiplos")
+x = input().split()
+a, b = x
+
+a = int(a)
+b = int(b)
+
+if a > b:
+    if a % b == 0:
+        print('Sao Multiplos')
+    else:
+        print('Nao sao Multiplos')
+
+if a < b:
+    if b % a == 0:
+        print('Sao Multiplos')
+    else:
+        print('Nao sao Multiplos')
+
+if a == b:
+    print('Sao Multiplos')
